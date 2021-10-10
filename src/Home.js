@@ -11,7 +11,7 @@ const Home = () => {
     
     return ( 
         <Router>
-        <div>
+        <div className="content">
             <Navbar/>
             <h1>Welcome to Dog World!!</h1>
 

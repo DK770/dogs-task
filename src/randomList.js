@@ -27,7 +27,7 @@ const RandomList = ({title}) => {
             { dogs && <>
                 <h2>{ title }</h2>
                 { dogs.map((eachdog, index) => (
-                    <div key={index} >
+                    <div classname="dog-preview" key={index} >
                         <h3>Image: </h3>
                         <img src={eachdog} alt="www.google.com" />
                     </div>

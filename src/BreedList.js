@@ -22,13 +22,13 @@ const BreedList = ({title}) => {
     },[breeds])
 
     return ( 
-        <div className="container">
+        <div className="content">
             { isPending && <div>Loading...</div> }
             { breeds && <>
                 <h2>{ title }</h2>
             {
                 Object.keys(breeds).map((eachbreed, index) => (
-                    <div key={index} >
+                    <div className="dog-preview" key={index} >
                         <a href={`/${eachbreed}`}> {eachbreed} </a>
                         
                     </div>

@@ -22,7 +22,7 @@ const BreedPics = ({ title }) => {
         <div className="container">
             { isPending && <div>Loading...</div> }
             { dogs && <>
-                <h2>{ title }</h2>
+                
                 <h3>Breed: { breed }</h3>
                 { dogs.map((eachdog, index) => (
                     <div key={index} >
